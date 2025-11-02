@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
-import pickle
+import joblib
 
 # Load the trained model
-filename = r'knn_model.sav'
+filename = r'logistic_regression_model.joblib'
 loaded_model = pickle.load(open(filename, 'rb'))
 
 # Define the correct column names
